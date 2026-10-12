@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="생활변화관측소 — 콘텐츠 협업 사례. 데이터와 관측에서 출발한 브랜드 콜라보 콘텐츠.">
+  <title>Content Collaborations — Jeongye Insight</title>
+  <style>
+    body {
+      max-width: 36em;
+      margin: 3.5em auto;
+      padding: 0 1.25em;
+      line-height: 1.5;
+      color: #111;
+    }
+
+    /* 상단 홈 링크 */
+    .top-nav {
+      font-size: 0.9em;
+      color: gray;
+      margin-bottom: 2em;
+    }
+    .top-nav a {
+      color: gray;
+      text-decoration: none;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1px;
+    }
+    .top-nav a:hover {
+      color: #ff4b1f;
+      border-bottom-color: #ff4b1f;
+    }
+
+    /* 페이지 헤더 */
+    .page-label {
+      font-size: 0.8em;
+      color: #ff4b1f;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin: 0 0 0.3em;
+      font-weight: 600;
+    }
+    h1 {
+      font-size: 1.5em;
+      margin: 0 0 0.4em;
+    }
+    .page-intro {
+      color: #444;
+      margin: 0.4em 0 2.4em;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #eee;
+      margin: 2.4em 0;
+    }
+
+    /* 프로젝트 카드 */
+    .project {
+      display: grid;
+      grid-template-columns: 14em 1fr;
+      gap: 1.4em;
+      margin: 2em 0;
+    }
+    .project .thumb {
+      display: block;
+      line-height: 0;
+    }
+    .project .thumb img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 1px solid #eee;
+      transition: opacity 0.15s;
+    }
+    .project .thumb:hover img {
+      opacity: 0.85;
+    }
+
+    .project-copy p { margin: 0.3em 0; }
+    .project-copy .meta {
+      font-size: 0.85em;
+      color: gray;
+      margin: 0 0 0.4em;
+    }
+    .project-copy .meta .sep { color: #ccc; }
+    .project-copy h2 {
+      font-size: 1.05em;
+      font-weight: 600;
+      margin: 0.2em 0 0.5em;
+      line-height: 1.35;
+    }
+    .project-copy h2 a {
+      color: #111;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    .project-copy h2 a:hover {
+      color: #ff4b1f;
+      border-bottom-color: #ff4b1f;
+    }
+    .project-copy p {
+      color: #444;
+      font-size: 0.95em;
+    }
+
+    /* 좁은 화면 — 썸네일 위, 텍스트 아래 */
+    @media (max-width: 32em) {
+      .project {
+        grid-template-columns: 1fr;
+        gap: 0.8em;
+      }
+    }
+
+    /* 색상 하이라이트 공통 */
+    a:hover { color: #ff4b1f; }
+    ::selection { background: #ff4b1f; color: #fff; }
+
+    /* 하단 CTA */
+    .cta {
+      margin: 3em 0 1em;
+      padding: 1.4em 0;
+      border-top: 1px solid #eee;
+      color: #444;
+    }
+    .cta a {
+      color: #111;
+      border-bottom: 1px solid #111;
+      text-decoration: none;
+      padding-bottom: 1px;
+    }
+    .cta a:hover {
+      color: #ff4b1f;
+      border-bottom-color: #ff4b1f;
+    }
+
+    /* 푸터 */
+    .sig {
+      color: gray;
+      margin-top: 2em;
+      font-size: 0.85em;
+    }
+    .sig .mark { color: #c9c9c9; }
+    .sig:hover .o { color: #ff4b1f; }
+    .sig:hover .g { color: #22a95a; }
+  </style>
+</head>
+<body>
+
+  <!-- 상단 홈 링크 -->
+  <p class="top-nav">
+    <a href="/">&larr; Jeongye Insight</a>
+  </p>
+
+  <!-- 페이지 헤더 -->
+  <p class="page-label">Works</p>
+  <h1>Content Collaborations</h1>
+  <p class="page-intro">
+    생활변화관측소 채널에서 함께 만든 브랜드 콜라보 콘텐츠.
+    데이터 관측에서 출발한 이야기들입니다.
+  </p>
+
+  <hr>
+
+  <!-- 프로젝트 카드 — 아래 article 블록을 복사해서 새 사례를 추가하세요 -->
+
+  <article class="project">
+    <a
+      class="thumb"
+      href="https://www.youtube.com/watch?v=i0zd6wkijrk"
+      target="_blank"
+      rel="noopener"
+      aria-label="국가데이터처 협업 영상 YouTube에서 보기"
+    >
+      <img
+        src="https://i.ytimg.com/vi/i0zd6wkijrk/maxresdefault.jpg"
+        alt="국가데이터처 데이터 기반 창업 협업 영상 썸네일"
+        loading="lazy"
+      >
+    </a>
+
+    <div class="project-copy">
+      <p class="meta">
+        국가데이터처
+        <span class="sep" aria-hidden="true">&middot;</span>
+        <time datetime="2026-07">2026.07</time>
+      </p>
+
+      <h2>
+        <a
+          href="https://www.youtube.com/watch?v=i0zd6wkijrk"
+          target="_blank"
+          rel="noopener"
+        >
+          창업의 시대, 창업 전에 무조건 봐야 할 것
+        </a>
+      </h2>
+
+      <p>
+        국가데이터처와 함께 우리나라 데이터의 현주소를 짚고,
+        공공데이터가 데이터 기반 창업과 새로운 기회를 어떻게 만드는지
+        살펴봤습니다.
+      </p>
+    </div>
+  </article>
+
+  <!-- 여기까지 하나의 사례. 새 사례는 위 article 블록을 그대로 복사해서 아래에 붙여넣으세요. -->
+
+
+  <!-- 하단 CTA -->
+  <div class="cta">
+    <p>
+      함께 만들 콘텐츠가 있다면
+      <a href="mailto:hello@jeongyeinsight.com?subject=Content%20Collaboration">hello@jeongyeinsight.com</a>
+      으로 연락주세요.
+    </p>
+  </div>
+
+  <p class="sig"><small>Jeongye Insight <span class="mark o">&#9632;</span><span class="mark g">&#9632;</span> 2026</small></p>
+
+</body>
+</html>
