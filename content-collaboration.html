@@ -61,6 +61,11 @@
       grid-template-columns: 14em 1fr;
       gap: 1.4em;
       margin: 2em 0;
+      padding-bottom: 2em;
+      border-bottom: 1px solid #f3f3f3;
+    }
+    .project:last-of-type {
+      border-bottom: none;
     }
     .project .thumb {
       display: block;
@@ -81,26 +86,25 @@
     .project-copy .meta {
       font-size: 0.85em;
       color: gray;
-      margin: 0 0 0.4em;
+      margin: 0 0 0.5em;
     }
-    .project-copy .meta .sep { color: #ccc; }
-    .project-copy h2 {
-      font-size: 1.05em;
-      font-weight: 600;
-      margin: 0.2em 0 0.5em;
-      line-height: 1.35;
-    }
-    .project-copy h2 a {
+    .project-copy .meta .brand {
       color: #111;
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
+      font-weight: 600;
     }
-    .project-copy h2 a:hover {
+    .project-copy .meta .sep { color: #ccc; margin: 0 0.3em; }
+    .project-copy .meta .watch {
+      color: gray;
+      text-decoration: none;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1px;
+    }
+    .project-copy .meta .watch:hover {
       color: #ff4b1f;
       border-bottom-color: #ff4b1f;
     }
-    .project-copy p {
-      color: #444;
+    .project-copy .desc {
+      color: #333;
       font-size: 0.95em;
     }
 
@@ -162,9 +166,9 @@
 
   <hr>
 
-  <!-- 프로젝트 카드 — 아래 article 블록을 복사해서 새 사례를 추가하세요. 최신순으로 유지. -->
+  <!-- 프로젝트 카드 — 아래 article 블록을 복사해서 새 사례를 추가하세요 -->
 
-  <!-- 1. 국가데이터처 — 2026.07 -->
+  <!-- 1. 국가데이터처 -->
   <article class="project">
     <a
       class="thumb"
@@ -182,28 +186,19 @@
 
     <div class="project-copy">
       <p class="meta">
-        국가데이터처
+        <span class="brand">국가데이터처</span>
         <span class="sep" aria-hidden="true">&middot;</span>
         <time datetime="2026-07">2026.07</time>
+        <span class="sep" aria-hidden="true">&middot;</span>
+        <a class="watch" href="https://www.youtube.com/watch?v=i0zd6wkijrk" target="_blank" rel="noopener">Watch</a>
       </p>
-
-      <h2>
-        <a
-          href="https://www.youtube.com/watch?v=i0zd6wkijrk"
-          target="_blank"
-          rel="noopener"
-        >
-          창업의 시대, 창업 전에 무조건 봐야 할 것
-        </a>
-      </h2>
-
-      <p>
+      <p class="desc">
         공공데이터가 데이터 기반 창업과 새로운 기회를 만드는 방식을 살펴본 콘텐츠.
       </p>
     </div>
   </article>
 
-  <!-- 2. 우유자조금관리위원회 — 2026.06 -->
+  <!-- 2. 우유자조금관리위원회 -->
   <article class="project">
     <a
       class="thumb"
@@ -221,27 +216,181 @@
 
     <div class="project-copy">
       <p class="meta">
-        우유자조금관리위원회
+        <span class="brand">우유자조금관리위원회</span>
         <span class="sep" aria-hidden="true">&middot;</span>
         <time datetime="2026-06">2026.06</time>
+        <span class="sep" aria-hidden="true">&middot;</span>
+        <a class="watch" href="https://www.youtube.com/watch?v=oO-2ztklT-4" target="_blank" rel="noopener">Watch</a>
       </p>
-
-      <h2>
-        <a
-          href="https://www.youtube.com/watch?v=oO-2ztklT-4"
-          target="_blank"
-          rel="noopener"
-        >
-          디저트, 단백질, 러닝 — 우유를 다시 보는 이유
-        </a>
-      </h2>
-
-      <p>
+      <p class="desc">
         디저트·단백질·러닝 트렌드를 통해 달라진 우유 소비 방식을 분석한 콘텐츠.
       </p>
     </div>
   </article>
 
-  <!-- 3. 제너럴 아이디어 — 2026.03 -->
+  <!-- 3. 제너럴 아이디어 -->
   <article class="project">
-    
+    <a
+      class="thumb"
+      href="https://www.youtube.com/watch?v=WIOUKfBWh_0"
+      target="_blank"
+      rel="noopener"
+      aria-label="제너럴 아이디어 협업 영상 YouTube에서 보기"
+    >
+      <img
+        src="https://i.ytimg.com/vi/WIOUKfBWh_0/maxresdefault.jpg"
+        alt="제너럴 아이디어 30대 패션 분석 협업 영상 썸네일"
+        loading="lazy"
+      >
+    </a>
+
+    <div class="project-copy">
+      <p class="meta">
+        <span class="brand">제너럴 아이디어</span>
+        <span class="sep" aria-hidden="true">&middot;</span>
+        <time datetime="2026-03">2026.03</time>
+        <span class="sep" aria-hidden="true">&middot;</span>
+        <a class="watch" href="https://www.youtube.com/watch?v=WIOUKfBWh_0" target="_blank" rel="noopener">Watch</a>
+      </p>
+      <p class="desc">
+        직장인의 옷차림과 연령별 인식을 바탕으로 30대 패션을 분석한 콘텐츠.
+      </p>
+    </div>
+  </article>
+
+  <!-- 4. 퍼시스 -->
+  <article class="project">
+    <a
+      class="thumb"
+      href="https://www.youtube.com/watch?v=OMG9_a8jA2w"
+      target="_blank"
+      rel="noopener"
+      aria-label="퍼시스 협업 영상 YouTube에서 보기"
+    >
+      <img
+        src="https://i.ytimg.com/vi/OMG9_a8jA2w/maxresdefault.jpg"
+        alt="퍼시스 직장 문화 변화 협업 영상 썸네일"
+        loading="lazy"
+      >
+    </a>
+
+    <div class="project-copy">
+      <p class="meta">
+        <span class="brand">퍼시스</span>
+        <span class="sep" aria-hidden="true">&middot;</span>
+        <time datetime="2025-09">2025.09</time>
+        <span class="sep" aria-hidden="true">&middot;</span>
+        <a class="watch" href="https://www.youtube.com/watch?v=OMG9_a8jA2w" target="_blank" rel="noopener">Watch</a>
+      </p>
+      <p class="desc">
+        오피스 밈과 세대별 인식을 통해 직장 문화와 업무 공간의 변화를 살펴본 콘텐츠.
+      </p>
+    </div>
+  </article>
+
+  <!-- 5. 한국타이어 -->
+  <article class="project">
+    <a
+      class="thumb"
+      href="https://www.youtube.com/watch?v=vZeo8RGQf_Y"
+      target="_blank"
+      rel="noopener"
+      aria-label="한국타이어 협업 영상 YouTube에서 보기"
+    >
+      <img
+        src="https://i.ytimg.com/vi/vZeo8RGQf_Y/maxresdefault.jpg"
+        alt="한국타이어 지식 영향력 판매 시대 협업 영상 썸네일"
+        loading="lazy"
+      >
+    </a>
+
+    <div class="project-copy">
+      <p class="meta">
+        <span class="brand">한국타이어</span>
+        <span class="sep" aria-hidden="true">&middot;</span>
+        <time datetime="2025-07">2025.07</time>
+        <span class="sep" aria-hidden="true">&middot;</span>
+        <a class="watch" href="https://www.youtube.com/watch?v=vZeo8RGQf_Y" target="_blank" rel="noopener">Watch</a>
+      </p>
+      <p class="desc">
+        상품을 넘어 지식과 영향력까지 판매하는 시대의 변화를 분석한 콘텐츠.
+      </p>
+    </div>
+  </article>
+
+  <!-- 6. LG전자 -->
+  <article class="project">
+    <a
+      class="thumb"
+      href="https://www.youtube.com/watch?v=vJPOe7BzD60"
+      target="_blank"
+      rel="noopener"
+      aria-label="LG전자 협업 영상 YouTube에서 보기"
+    >
+      <img
+        src="https://i.ytimg.com/vi/vJPOe7BzD60/maxresdefault.jpg"
+        alt="LG전자 가전 구독 케어 서비스 협업 영상 썸네일"
+        loading="lazy"
+      >
+    </a>
+
+    <div class="project-copy">
+      <p class="meta">
+        <span class="brand">LG전자</span>
+        <span class="sep" aria-hidden="true">&middot;</span>
+        <time datetime="2025-05">2025.05</time>
+        <span class="sep" aria-hidden="true">&middot;</span>
+        <a class="watch" href="https://www.youtube.com/watch?v=vJPOe7BzD60" target="_blank" rel="noopener">Watch</a>
+      </p>
+      <p class="desc">
+        가전 구독의 성장 배경과 LG 구독 케어 서비스를 데이터로 살펴본 콘텐츠.
+      </p>
+    </div>
+  </article>
+
+  <!-- 7. 보건복지부 -->
+  <article class="project">
+    <a
+      class="thumb"
+      href="https://www.youtube.com/watch?v=dmH-SGA95yM"
+      target="_blank"
+      rel="noopener"
+      aria-label="보건복지부 협업 영상 YouTube에서 보기"
+    >
+      <img
+        src="https://i.ytimg.com/vi/dmH-SGA95yM/maxresdefault.jpg"
+        alt="보건복지부 일하는 노인 캠페인 협업 영상 썸네일"
+        loading="lazy"
+      >
+    </a>
+
+    <div class="project-copy">
+      <p class="meta">
+        <span class="brand">보건복지부</span>
+        <span class="sep" aria-hidden="true">&middot;</span>
+        <time datetime="2024-10">2024.10</time>
+        <span class="sep" aria-hidden="true">&middot;</span>
+        <a class="watch" href="https://www.youtube.com/watch?v=dmH-SGA95yM" target="_blank" rel="noopener">Watch</a>
+      </p>
+      <p class="desc">
+        소셜 빅데이터로 달라진 노인의 모습을 살펴보고, 일하는 노인에 대한 편견과 인식을 다시 생각한 캠페인 콘텐츠.
+      </p>
+    </div>
+  </article>
+
+  <!-- 여기까지 7개 사례. 새 사례는 위 article 블록을 그대로 복사해서 추가하세요. -->
+
+
+  <!-- 하단 CTA -->
+  <div class="cta">
+    <p>
+      함께 만들 콘텐츠가 있다면
+      <a href="mailto:hello@jeongyeinsight.com?subject=Content%20Collaboration">hello@jeongyeinsight.com</a>
+      으로 연락주세요.
+    </p>
+  </div>
+
+  <p class="sig"><small>Jeongye Insight <span class="mark o">&#9632;</span><span class="mark g">&#9632;</span> 2026</small></p>
+
+</body>
+</html>
