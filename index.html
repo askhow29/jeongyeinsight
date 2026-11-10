@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeongye Insight</title>
-  <meta name="description" content="Jeongye Insight — Life Change Observatory. 생활변화관측소. We look beyond trends to observe lasting change.">
+  <meta name="description" content="정예 · 생활변화관측소 — 소셜데이터로 일상의 오래가는 변화를 관찰하고 기록합니다.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jeongyeinsight.com/">
-  <meta property="og:title" content="Jeongye Insight — 생활변화관측소">
-  <meta property="og:description" content="We look beyond trends to observe lasting change. 유행 너머, 오래 남는 생활의 변화를 관찰합니다.">
-  <meta property="og:image" content="https://jeongyeinsight.com/og.png">
+  <meta property="og:title" content="Jeongye Insight · 생활변화관측소">
+  <meta property="og:description" content="유행 너머, 오래가는 변화를 봅니다. 소셜데이터로 일상의 변화를 관찰하고 기록합니다.">
+  <meta property="og:image" content="https://jeongyeinsight.com/og-image.png">
+  <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
+  <title>Jeongye Insight · 생활변화관측소</title>
   <style>
     body {
       max-width: 30em;
@@ -27,7 +28,8 @@
       -webkit-box-decoration-break: clone;
     }
     .subtitle { color: gray; margin-top: 0; }
-    .proof { color: gray; font-size: 0.95em; }
+    .ko { color:#444; }
+    .proof { border-left: 3px solid #ff4b1f; padding-left: 0.8em; margin: 1em 0; font-size: .92em; }
     h2 { font-weight: normal; font-size: 1em; margin: 1.6em 0 0.4em; }
     p { margin: 0.4em 0; }
     dl { margin: 0.4em 0; }
@@ -35,6 +37,13 @@
     hr { margin: 1.4em 0; }
     .role { color: gray; }
     .sep { color: #bbb; }
+    .record { border-top: 1px solid #ddd; padding: 0.9em 0 0.7em; margin-top: 0.7em; }
+    .record .series { color: #ff4b1f; font-size: 0.8em; letter-spacing: 0.08em; margin: 0 0 0.25em; }
+    .record h3 { font-size: 1.05em; line-height: 1.4; margin: 0 0 0.35em; }
+    .record h3 a { color: #000; text-decoration: none; }
+    .record h3 a:hover { color: #ff4b1f; }
+    .record .dek { color: #444; line-height: 1.55; }
+    .record .meta { color: gray; font-size: 0.88em; margin-top: 0.55em; }
 
     a:hover { color: #ff4b1f; }
     .contact a:hover { color: #22a95a; }
@@ -51,53 +60,61 @@
 <body>
 
   <h1><span class="highlight">Jeongye Insight</span></h1>
-  <p class="subtitle">Life Change Observatory <span class="sep">·</span> <span lang="ko">생활변화관측소</span></p>
+  <p class="subtitle">Life Change Observatory · 생활변화관측소</p>
 
   <p>We look beyond trends to observe lasting change.<br>
   Through social listening, we track everyday life over time
   and document how it shifts.</p>
+  <p class="ko">유행 너머, 오래가는 변화를 봅니다.<br>소셜데이터로 일상의 변화를 관찰하고 기록합니다.</p>
 
-  <p class="proof" lang="ko">유튜브 구독자 약 12만 명 <span class="sep">·</span> 《트렌드 노트》 공저 (2023–2025)</p>
+  <p class="proof"><b>YouTube 12.6만 구독자</b> <span class="sep">·</span> 『트렌드노트』 공저 <span class="sep">·</span> LG전자, 국가데이터처, 보건복지부 등과 협업</p>
 
   <hr>
 
   <h2>Records</h2>
 
-  <dl>
-    <dt><a href="https://www.youtube.com/@LifeChange_Observatory">YouTube</a></dt>
-    <dd>Observations, made into videos.</dd>
+  <p><a href="https://www.youtube.com/@LifeChange_Observatory">YouTube</a> <span class="sep">&middot;</span> <a href="/reports/">Reports, News</a></p>
 
-    <dt><a href="/lifeworld.html"><span lang="ko">정예의 생활세계</span></a></dt>
-    <dd>Field notes on everyday change, checked against social data. <span lang="ko">관찰 노트</span></dd>
-  </dl>
+  <article class="record">
+    <p class="series">정예의 생활세계 · 01</p>
+    <h3><a href="/reports/celebration.html">삶은 달라졌는데, 축하는 왜 똑같을까</a></h3>
+    <p class="dek">청첩장을 직접 건네는 일이 성의인 동시에 부담이 되는 순간이 있다. 서로 다른 방식으로 결혼하는 시대, 우리가 축하를 주고받으며 기대하는 것도 달라진다.</p>
+    <p class="meta">칼럼 <span class="sep">&middot;</span> 글 정석환 연구원 <span class="sep">&middot;</span> 2026.11 <span class="sep">&middot;</span> <a href="/reports/celebration.html">읽기 &rarr;</a></p>
+  </article>
 
+  <article class="record">
+    <p class="series">정예의 생활세계 · 02</p>
+    <h3><a href="/reports/ai-anxiety.html">일은 줄지 않았는데, 불안은 자동화됐다</a></h3>
+    <p class="dek">AI는 번역과 회의록을 대신했지만 퇴근을 앞당기지는 않았다. 일을 빨리 끝낼수록 더 많은 일이 돌아오는 시대의 직장 풍경을 기록한다.</p>
+    <p class="meta">칼럼 <span class="sep">&middot;</span> 글 정석환 연구원 <span class="sep">&middot;</span> 2026.11 <span class="sep">&middot;</span> <a href="/reports/ai-anxiety.html">읽기 &rarr;</a></p>
+  </article>
   <h2>Works</h2>
 
   <dl>
-    <dt><a href="/content-collaboration.html">Content Collaboration</a></dt>
-    <dd>Videos and campaigns made together, on the Observatory's channels.</dd>
+    <dt><a href="/content-collaboration.html">Content Collaboration</a>
+    <dd>Videos and campaigns made together, on the Observatory's channels.
 
-    <dt><a href="mailto:hello@jeongyeinsight.com?subject=Report%20Collaboration">Report Collaboration</a></dt>
-    <dd>Custom insight reports built on social big data. <span class="role">— hello@jeongyeinsight.com</span></dd>
+    <dt><a href="/report-collaboration.html">Report Collaboration</a>
+    <dd>Custom insight reports built on social big data.
   </dl>
 
   <h2>Media Kit</h2>
 
-  <p><a href="jeongye-insight-media-kit-2026.pdf" target="_blank" rel="noopener">Channel Kit <span lang="ko">채널 소개서</span> (PDF)</a> <span class="role">— 2026.09</span></p>
+  <p><a href="jeongye-insight-media-kit-2026.pdf" target="_blank" rel="noopener">채널 소개서 (PDF)</a> <span class="role">&mdash; 2026.09</span></p>
 
   <h2>People</h2>
 
-  <p>Sukhwan Jung<span class="sep">,</span> Yaeeun Shin <span class="role">— Researchers</span> <span class="sep">·</span> <a href="researchers-profile_202610.pdf" target="_blank" rel="noopener">Profile <span lang="ko">소개</span> (PDF)</a> <span class="role">— 2026.10</span></p>
+  <p>Sukhwan Jung<span class="sep">,</span> Yaeeun Shin <span class="role">&mdash; Researchers</span> <span class="sep">&middot;</span> <a href="researchers-profile_202610.pdf" target="_blank" rel="noopener">소개 (PDF)</a> <span class="role">&mdash; 2026.10</span></p>
 
   <h2 class="contact">Contact</h2>
 
   <div class="contact">
-    <p><a href="mailto:hello@jeongyeinsight.com">hello@jeongyeinsight.com</a> <span class="sep">·</span> <a href="https://www.instagram.com/lifechange_observatory/">Instagram</a></p>
+    <p><a href="mailto:hello@jeongyeinsight.com">hello@jeongyeinsight.com</a> <span class="sep">&middot;</span> <a href="https://www.instagram.com/lifechange_observatory/">Instagram</a></p>
   </div>
 
   <hr>
 
-  <p class="sig"><small>Jeongye Insight <span class="mark o">■</span><span class="mark g">■</span> 2026</small></p>
+  <p class="sig"><small>Jeongye Insight <span class="mark o">&#9632;</span><span class="mark g">&#9632;</span> 2026</small></p>
 
 </body>
 </html>
